@@ -1,4 +1,9 @@
 # Desktop
+## Credit
+DomiLuebben: [DomiLuebben Archmatic](https://github.com/DomiLuebben/ArchMatic)
+
+erikdubois and Arcolinux: [Arco Linux](https://github.com/arcolinuxd)
+
 ### Cinnamon desktop
 ```bash
 curl https://raw.githubusercontent.com/hiruma87/desktop/main/cinnamon.sh -o cinnamon.sh
