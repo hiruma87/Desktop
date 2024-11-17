@@ -46,6 +46,7 @@ PKGS=(
     'xorg-xwininfo'
     'lightdm'
     'lightdm-slick-greeter'
+    'lightdm-settings'
     'cinnamon'
     'gnome-terminal'
     #utilities
@@ -132,6 +133,9 @@ sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.socket
 sudo systemctl mask systemd-rfkill.service
 sudo systemctl enable upower
+sleep 1
+sudo sed -i "s/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/" /etc/lightdm/lightdm.conf
+sleep 1
 echo
 echo "Done!"
 echo
