@@ -17,6 +17,8 @@ Run
 ```bash
 curl https://raw.githubusercontent.com/hiruma87/desktop/main/plasma.sh -o plasma.sh
 ```
+> Made it as minimal as possible without compromise utilities that suits me, you can just install plasma-meta or plasma by adding them in the script if you want full experience
+
 Set it as executable
 ```bash
 chmod +x plasma.sh
