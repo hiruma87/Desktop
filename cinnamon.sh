@@ -47,6 +47,9 @@ PKGS=(
     'lightdm'
     'lightdm-slick-greeter'
     'lightdm-settings'
+    # uncomment for default greeter
+    # 'lightdm-gtk-greeter'
+    # 'lightdm-gtk-greeter-settings'
     'cinnamon'
     'gnome-terminal'
     #utilities
@@ -134,6 +137,7 @@ sudo systemctl mask systemd-rfkill.socket
 sudo systemctl mask systemd-rfkill.service
 sudo systemctl enable upower
 sleep 1
+# comment if want to use gtk-greeter instead
 sudo sed -i "s/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/" /etc/lightdm/lightdm.conf
 sleep 1
 echo
