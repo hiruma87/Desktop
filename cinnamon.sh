@@ -67,6 +67,10 @@ PKGS=(
     'wireless_tools'
     'inotify-tools'
     'jq'
+    'mintlocale'
+    'cinnamon-translations'
+    'gnome-keyring'
+    'xdg-user-dirs-gtk'
     #bluetooth
     'bluez'
     'bluez-utils'
@@ -101,10 +105,6 @@ PKGS=(
     'smplayer'
     'baobab'
     'gufw'
-    'mintlocale'
-    'cinnamon-translations'
-    'gnome-keyring'
-    'xdg-user-dirs-gtk'
     ##'network-manager-applet'
     # themes
     'mint-themes'
