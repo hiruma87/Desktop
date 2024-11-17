@@ -71,8 +71,6 @@ powerdevil
 print-manager
 sddm-kcm
 xdg-desktop-portal-kde
-breeze-grub
-breeze-plymouth
 flatpak-kcm
 plymouth-kcm
 #utilities
