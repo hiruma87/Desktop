@@ -3,6 +3,8 @@
 ```bash
 curl https://raw.githubusercontent.com/hiruma87/desktop/main/cinnamon.sh -o cinnamon.sh
 ```
+> Check the files especially the application and themes part, they are there so that it as close to Linux Mint as possible
+
 Set it as executable
 ```bash
 chmod +x cinnamon.sh
