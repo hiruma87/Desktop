@@ -31,7 +31,7 @@ func_install() {
     	echo "###############################################################################"
     	echo
     	tput sgr0
-    	sudo yay -S --noconfirm --needed $1
+    	yay -S --noconfirm --needed $1
     fi
 }
 
