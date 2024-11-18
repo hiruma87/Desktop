@@ -48,7 +48,6 @@ xorg-xwininfo
 egl-wayland
 sddm
 plasma-meta
-plasma-workspace
 #utilities
 cups
 cups-pdf
@@ -113,7 +112,16 @@ sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.socket
 sudo systemctl mask systemd-rfkill.service
 sudo systemctl enable upower
-
+sleep 3
+sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
+sleep 3
+sudo swapon /.swap/swapfile
+sleep 3
+echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
+sleep 3
+sudo systemctl daemon-reload
+sleep 3
+sudo mount -av
 sleep 1
 	echo "################################################################"
 	tput setaf 3;echo "Installing complete" tput sgr0;
