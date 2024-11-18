@@ -122,6 +122,8 @@ sleep 3
 sudo systemctl daemon-reload
 sleep 3
 sudo mount -av
+sleep 3
+free -h
 sleep 1
 	echo "################################################################"
 	tput setaf 3;echo "Installing complete" tput sgr0;
