@@ -131,7 +131,7 @@ done
 
 sudo systemctl enable cups
 sudo systemctl enable bluetooth
-sudo systemctl enable lightdm.service
+sudo systemctl enable sddm.service
 sudo systemctl enable reflector.service
 sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.socket
