@@ -136,6 +136,18 @@ sudo systemctl enable reflector.timer
 sudo systemctl mask systemd-rfkill.socket
 sudo systemctl mask systemd-rfkill.service
 sudo systemctl enable upower
+sleep 3
+sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
+sleep 3
+sudo swapon /.swap/swapfile
+sleep 3
+echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
+sleep 3
+sudo systemctl daemon-reload
+sleep 3
+sudo mount -av
+sleep 3
+free -h
 sleep 1
 # comment if want to use gtk-greeter instead
 sudo sed -i "s/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/" /etc/lightdm/lightdm.conf
