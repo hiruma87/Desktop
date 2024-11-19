@@ -149,9 +149,7 @@ sudo mount -av
 sleep 3
 free -h
 sleep 1
-# comment if want to use gtk-greeter instead
-sudo sed -i "s/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/" /etc/lightdm/lightdm.conf
+	echo "################################################################"
+	tput setaf 3;echo "Installing complete"; tput sgr0;
+	echo "################################################################"
 sleep 1
-echo
-echo "Done!"
-echo
