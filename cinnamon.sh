@@ -141,7 +141,7 @@ sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
 sleep 3
 sudo swapon /.swap/swapfile
 sleep 3
-echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
+sudo echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
 sleep 3
 sudo systemctl daemon-reload
 sleep 3
