@@ -54,7 +54,7 @@ cosmic-launcher
 cosmic-notifications
 cosmic-osd
 cosmic-panel
-cosmic-setting
+cosmic-settings
 cosmic-text-editor
 cosmic-files
 cosmic-terminal
