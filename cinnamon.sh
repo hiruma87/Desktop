@@ -39,84 +39,84 @@ func_install() {
 }
 
 PKGS=(
-    #basic cinnamon desktop
-    'xorg-server'
-    'egl-wayland'
-    'xorg-xinit'
-    'xorg-xwininfo'
-    'lightdm'
-    'lightdm-slick-greeter'
-    'lightdm-settings'
-    # uncomment for default greeter
-    # 'lightdm-gtk-greeter'
-    # 'lightdm-gtk-greeter-settings'
-    'cinnamon'
-    'gnome-terminal'
-    #utilities
-    'cups'
-    'cups-pdf'
-    'system-config-printer'
-    'gutenprint' #canon driver
-    'nemo-fileroller'
-    'unzip'
-    'unrar'
-    'flatpak'
-    'grub-btrfs'
-    'btrfs-assistant'
-    'python-pipx'
-    'wireless_tools'
-    'inotify-tools'
-    'jq'
-    'mintlocale'
-    'cinnamon-translations'
-    'gnome-keyring'
-    'xdg-user-dirs-gtk'
-    #bluetooth
-    'bluez'
-    'bluez-utils'
-    'blueberry'
-    'bluez-libs'
-    #audio
-    'pipewire'
-    'wireplumber'
-    'pipewire-alsa'
-    'pipewire-jack'
-    'pipewire-pulse'
-    'libpulse'
-    'gst-plugin-pipewire'
-    'pavucontrol'
-    # applications
-    'mintstick'
-    'xed'
-    'gnome-screenshot'
-    'redshift'
-    'onboard'
-    'sticky'
-    'xviewer'
-    'xreader'
-    'gnome-disk-utility'
-    'gnome-calculator'
-    'simple-scan'
-    'pix'
-    'transmission-gtk'
-    'gnome-calendar'
-    'libreoffice-fresh'
-    'rhythmbox'
-    'smplayer'
-    'baobab'
-    'gufw'
-    ##'network-manager-applet'
-    # themes
-    'mint-themes'
-    'mint-y-icons'
-    'mint-x-icons'
-    # fonts
-    'noto-fonts'
-    'noto-fonts-cjk'
-    'noto-fonts-emoji'
-    'ttf-ubuntu-font-family'
-    'ttf-roboto'
-    'ttf-roboto-mono'
+#basic cinnamon desktop
+xorg-server
+egl-wayland
+xorg-xinit
+xorg-xwininfo
+lightdm
+lightdm-slick-greeter
+lightdm-settings
+#uncomment for default greeter
+# lightdm-gtk-greeter
+# lightdm-gtk-greeter-settings
+cinnamon
+gnome-terminal
+ #utilities
+cups
+cups-pdf
+system-config-printer
+gutenprint #canon driver
+nemo-fileroller
+unzip
+unrar
+flatpak
+grub-btrfs
+btrfs-assistant
+python-pipx
+wireless_tools
+inotify-tools
+jq
+mintlocale
+cinnamon-translations
+gnome-keyring
+xdg-user-dirs-gtk
+#bluetooth
+bluez
+bluez-utils
+blueberry
+bluez-libs
+#audio
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+libpulse
+gst-plugin-pipewire
+pavucontrol
+# applications
+mintstick
+xed
+gnome-screenshot
+redshift
+onboard
+sticky
+xviewer
+xreader
+gnome-disk-utility
+gnome-calculator
+simple-scan
+pix
+transmission-gtk
+gnome-calendar
+libreoffice-fresh
+rhythmbox
+smplayer
+baobab
+gufw
+##'network-manager-applet'
+# themes
+mint-themes
+mint-y-icons
+mint-x-icons
+# fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+ttf-ubuntu-font-family
+ttf-roboto
+ttf-roboto-mono
 )
 
 for PKG in "${PKGS[@]}"; do
