@@ -129,13 +129,22 @@ for PKG in "${PKGS[@]}"; do
 done
 
 sudo systemctl enable cups
+sleep 1
 sudo systemctl enable bluetooth
+sleep 1
 sudo systemctl enable lightdm.service
+sleep 1
 sudo systemctl enable reflector.service
+sleep 1
 sudo systemctl enable reflector.timer
+sleep 1
 sudo systemctl mask systemd-rfkill.socket
+sleep 1
 sudo systemctl mask systemd-rfkill.service
+sleep 1
 sudo systemctl enable upower
+sleep 1
+sudo systemctl enable grub-btrfsd.service
 sleep 3
 sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
 sleep 3
@@ -148,6 +157,8 @@ sleep 3
 sudo mount -av
 sleep 3
 free -h
+sleep 1
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 sleep 1
 	echo "################################################################"
 	tput setaf 3;echo "Installing complete"; tput sgr0;
