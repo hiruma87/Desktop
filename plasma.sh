@@ -47,7 +47,31 @@ xorg-xinit
 xorg-xwininfo
 egl-wayland
 sddm
-plasma-meta
+plasma-desktop
+plasma-nm
+plasma-systemmonitor
+drkonqi
+kde-gtk-config
+kdeaplasma-addons
+kgamma
+kinfocenter
+kscreen
+kwrited
+ocean-sound-theme
+oxygen
+oxygen-sounds
+plasma-disks
+plasma-welcome
+plasma-workpace-wallpapers
+powerdevil
+sddm-kcm
+xdg-deaktop-portal-kde
+flatpak-kcm
+phonon-vlc
+kio-admin
+kio-extras
+kio-fuse
+kio-gdrive
 #utilities
 cups
 cups-pdf
@@ -62,6 +86,7 @@ wireless_tools
 inotify-tools
 jq
 wget
+print-manager
 #and graphic
 mesa
 lib32-mesa
@@ -74,6 +99,7 @@ libva-utils
 bluez
 bluez-utils
 bluez-libs
+bluedevil
 #audip
 pipewire
 wireplumber
@@ -91,6 +117,14 @@ dolphin
 firefox
 opera
 thunderbird
+dolphin-plugins
+ffmpegthumbs
+power-profiles-daemon
+xsettingsd
+#fonts
+noto-sans
+noto-color-emoji
+noto-fonts-cjk
 )
 
 for name in "${list[@]}" ; do
