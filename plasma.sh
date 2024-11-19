@@ -95,10 +95,13 @@ gst-plugin-pipewire
 firefox
 opera
 thunderbird
-#fonts
-noto-sans
-noto-fonts-emoji
+# fonts
+noto-fonts
 noto-fonts-cjk
+noto-fonts-emoji
+ttf-ubuntu-font-family
+ttf-roboto
+ttf-roboto-mono
 )
 
 for name in "${list[@]}" ; do
