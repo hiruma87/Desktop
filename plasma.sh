@@ -88,6 +88,7 @@ gst-plugin-pipewire
 firefox
 opera
 thunderbird
+keepassxc
 # fonts
 noto-fonts
 noto-fonts-cjk
