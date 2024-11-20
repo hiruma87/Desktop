@@ -45,20 +45,7 @@ egl-wayland
 xorg-xinit
 xorg-xwininfo
 cosmic
-cosmic-comp
-cosmic-applets
-cosmic-app-library
-cosmic-bg
-cosmic-icon-theme
-cosmic-launcher
-cosmic-notifications
-cosmic-osd
-cosmic-panel
-cosmic-settings
-cosmic-text-editor
-cosmic-files
-cosmic-terminal
-cosmic-wallpapers
+sddm
  #utilities
 cups
 cups-pdf
@@ -111,7 +98,7 @@ sudo systemctl enable cups
 sleep 1
 sudo systemctl enable bluetooth
 sleep 1
-sudo systemctl enable cosmic-greeter.service
+sudo systemctl enable sddm.service
 sleep 1
 sudo systemctl enable reflector.service
 sleep 1
@@ -124,7 +111,13 @@ sleep 1
 sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
-sleep 3
+
+sleep 1
+	echo "################################################################"
+	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
+	echo "################################################################"
+sleep 1
+
 sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
 sleep 3
 sudo swapon /.swap/swapfile
