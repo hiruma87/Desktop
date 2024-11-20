@@ -49,6 +49,7 @@ egl-wayland
 sddm
 plasma
 plasma-wayland-session
+print-manager
 #utilities
 cups
 cups-pdf
@@ -127,6 +128,13 @@ sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
 sleep 3
+# making a swapfile
+sleep 1
+	echo "################################################################"
+	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
+	echo "################################################################"
+sleep 1
+
 sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
 sleep 3
 sudo swapon /.swap/swapfile
