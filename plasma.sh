@@ -47,15 +47,8 @@ xorg-xinit
 xorg-xwininfo
 egl-wayland
 sddm
-plasma-meta
-plasma-workspace
-konsole
-kwrite
-ark
-discover
-dolphin
-dolphin-plugins
-print-manager
+plasma
+plasma-wayland-session
 #utilities
 cups
 cups-pdf
