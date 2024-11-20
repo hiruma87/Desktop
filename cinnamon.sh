@@ -105,6 +105,10 @@ rhythmbox
 smplayer
 baobab
 gufw
+firefox
+opera
+thunderbird
+keepassxc
 ##'network-manager-applet'
 # themes
 mint-themes
