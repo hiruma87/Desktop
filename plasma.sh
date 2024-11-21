@@ -50,6 +50,7 @@ sddm
 plasma
 plasma-wayland-session
 print-manager
+system-config-printer
 #utilities
 cups
 cups-pdf
