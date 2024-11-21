@@ -149,7 +149,24 @@ sleep 1
 sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
-sleep 3
+
+# Change default lightdm greeter to slick-greeter
+sleep 1
+	echo "################################################################"
+	tput setaf 3;echo "Change default lightdm greeter to slick-greeter"; tput sgr0;
+	echo "################################################################"
+sleep 1
+
+sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/'
+sleep 1
+
+# making a swapfile
+sleep 1
+	echo "################################################################"
+	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
+	echo "################################################################"
+sleep 1
+
 sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
 sleep 3
 sudo swapon /.swap/swapfile
