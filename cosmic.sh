@@ -45,7 +45,6 @@ egl-wayland
 xorg-xinit
 xorg-xwininfo
 cosmic
-sddm
  #utilities
 cups
 cups-pdf
@@ -98,7 +97,7 @@ sudo systemctl enable cups
 sleep 1
 sudo systemctl enable bluetooth
 sleep 1
-sudo systemctl enable sddm.service
+sudo systemctl enable cosmic-greeter.service
 sleep 1
 sudo systemctl enable reflector.service
 sleep 1
