@@ -81,7 +81,6 @@ bluedevil
 pipewire
 wireplumber
 pipewire-alsa
-pipewire-jack
 pipewire-pulse
 libpulse
 gst-plugin-pipewire
@@ -128,6 +127,7 @@ sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
 sleep 3
+
 # making a swapfile
 sleep 1
 	echo "################################################################"
@@ -148,8 +148,9 @@ sleep 3
 free -h
 sleep 1
 sudo grub-mkconfig -o /boot/grub/grub.cfg
+
 sleep 1
 	echo "################################################################"
-	tput setaf 3;echo "Installing complete"; tput sgr0;
+	tput setaf 3;echo "Installation complete"; tput sgr0;
 	echo "################################################################"
 sleep 1
