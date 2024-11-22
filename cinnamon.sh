@@ -157,7 +157,7 @@ sleep 1
 	echo "################################################################"
 sleep 1
 
-sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/'
+sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/' /etc/lightdm/lightdm.conf
 sleep 1
 
 # making a swapfile
