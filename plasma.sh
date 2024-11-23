@@ -51,6 +51,9 @@ plasma
 plasma-wayland-session
 print-manager
 system-config-printer
+konsole
+dolphin
+dolphin-plugins
 #utilities
 cups
 cups-pdf
@@ -64,7 +67,6 @@ python-pipx
 wireless_tools
 inotify-tools
 jq
-wget
 #and graphic
 mesa
 lib32-mesa
