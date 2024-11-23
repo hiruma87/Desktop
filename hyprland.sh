@@ -92,10 +92,6 @@ pipewire-pulse
 libpulse
 gst-plugin-pipewire
 #apps
-firefox
-opera
-thunderbird
-keepassxc
 # fonts
 noto-fonts
 noto-fonts-cjk
