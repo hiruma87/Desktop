@@ -46,7 +46,7 @@ xorg-xwayland
 xorg-xinit
 xorg-xwininfo
 egl-wayland
-hyprland
+hyprland-git
 dunst
 kitty
 dolphin
@@ -58,7 +58,7 @@ qt6-wayland
 polkit-kde-agent
 grim
 slurp
-sddm
+sddm-git
 #utilities
 cups
 cups-pdf
