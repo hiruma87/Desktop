@@ -41,6 +41,11 @@ echo "Installation of the core software"
 
 list=(
 #org-sercer and desktop
+xorg-server
+xorg-xwayland
+xorg-xinit
+xorg-xwininfo
+egl-wayland
 hyprland
 dunst
 kitty
