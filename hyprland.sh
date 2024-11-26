@@ -81,8 +81,6 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 ttf-ubuntu-font-family
-ttf-roboto
-ttf-roboto-mono
 )
 
 for name in "${list[@]}" ; do
