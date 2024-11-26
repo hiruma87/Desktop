@@ -42,22 +42,16 @@ echo "Installation of the core software"
 list=(
 #org-sercer and desktop
 xorg-server
-xorg-xwayland
 xorg-xinit
-xorg-xwininfo
 egl-wayland
-hyprland-git
+hyprland
 dunst
 kitty
 dolphin
 dolphin-plugins
 wofi
 xdg-desktop-portal-hyprland
-qt5-wayland
-qt6-wayland
 polkit-kde-agent
-grim
-slurp
 sddm-git
 #utilities
 cups
@@ -68,18 +62,8 @@ unrar
 flatpak
 grub-btrfs
 btrfs-assistant
-python-pipx
 wireless_tools
 inotify-tools
-jq
-#and graphic
-mesa
-lib32-mesa
-vulkan-radeon
-lib32-vulkan-radeon
-libva
-lib32-libva
-libva-utils
 #bluetooth
 bluez
 bluez-utils
