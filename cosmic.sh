@@ -43,7 +43,7 @@ PKGS=(
 xorg-server
 egl-wayland
 xorg-xinit
-xorg-xwininfo
+# DE and WM
 cosmic
  #utilities
 cups
@@ -54,10 +54,8 @@ unrar
 flatpak
 grub-btrfs
 btrfs-assistant
-python-pipx
 wireless_tools
 inotify-tools
-jq
 #bluetooth
 bluez
 bluez-utils
@@ -70,18 +68,13 @@ pipewire-jack
 pipewire-pulse
 libpulse
 gst-plugin-pipewire
-pavucontrol
 # applications
-firefox
 opera
-thunderbird
 # fonts
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 ttf-ubuntu-font-family
-ttf-roboto
-ttf-roboto-mono
 )
 
 for PKG in "${PKGS[@]}"; do
