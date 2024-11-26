@@ -44,6 +44,7 @@ list=(
 xorg-server
 xorg-xinit
 egl-wayland
+# DE and WM
 sddm
 plasma-meta
 plasma-workspace
@@ -84,8 +85,6 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 ttf-ubuntu-font-family
-ttf-roboto
-ttf-roboto-mono
 )
 
 for name in "${list[@]}" ; do
