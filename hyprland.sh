@@ -44,6 +44,7 @@ list=(
 xorg-server
 xorg-xinit
 egl-wayland
+# DE and WM
 hyprland
 dunst
 kitty
@@ -68,14 +69,13 @@ inotify-tools
 bluez
 bluez-utils
 bluez-libs
-#audip
+#audio
 pipewire
 wireplumber
 pipewire-alsa
 pipewire-pulse
 libpulse
 gst-plugin-pipewire
-#apps
 # fonts
 noto-fonts
 noto-fonts-cjk
