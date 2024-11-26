@@ -63,14 +63,6 @@ grub-btrfs
 btrfs-assistant
 wireless_tools
 inotify-tools
-#amd graphic
-mesa
-lib32-mesa
-vulkan-radeon
-lib32-vulkan-radeon
-libva
-lib32-libva
-libva-utils
 #bluetooth
 bluez
 bluez-utils
