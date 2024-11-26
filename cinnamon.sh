@@ -43,7 +43,6 @@ PKGS=(
 xorg-server
 egl-wayland
 xorg-xinit
-xorg-xwininfo
 lightdm
 lightdm-slick-greeter
 lightdm-settings
@@ -88,11 +87,8 @@ xed
 xviewer
 xreader
 gnome-disk-utility
-gnome-calculator
 simple-scan
 transmission-gtk
-gnome-calendar
-rhythmbox
 smplayer
 gufw
 # internet
