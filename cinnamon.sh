@@ -63,10 +63,8 @@ unrar
 flatpak
 grub-btrfs
 btrfs-assistant
-python-pipx
 wireless_tools
 inotify-tools
-jq
 mintlocale
 cinnamon-translations
 gnome-keyring
