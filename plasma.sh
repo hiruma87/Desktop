@@ -61,11 +61,9 @@ unrar
 flatpak
 grub-btrfs
 btrfs-assistant
-python-pipx
 wireless_tools
 inotify-tools
-jq
-#and graphic
+#amd graphic
 mesa
 lib32-mesa
 vulkan-radeon
@@ -78,7 +76,7 @@ bluez
 bluez-utils
 bluez-libs
 bluedevil
-#audip
+#audio
 pipewire
 wireplumber
 pipewire-alsa
@@ -86,7 +84,6 @@ pipewire-pulse
 libpulse
 gst-plugin-pipewire
 #apps
-firefox
 opera
 thunderbird
 keepassxc
