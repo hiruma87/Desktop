@@ -66,7 +66,6 @@ wireless_tools
 inotify-tools
 mintlocale
 cinnamon-translations
-gnome-keyring
 xdg-user-dirs-gtk
 #bluetooth
 bluez
@@ -88,14 +87,12 @@ xviewer
 xreader
 gnome-disk-utility
 simple-scan
-transmission-gtk
 smplayer
 gufw
 # internet
 opera
 thunderbird
 keepassxc
-##'network-manager-applet'
 # themes
 mint-themes
 mint-y-icons
