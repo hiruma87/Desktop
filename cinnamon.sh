@@ -84,28 +84,20 @@ pipewire-jack
 pipewire-pulse
 libpulse
 gst-plugin-pipewire
-pavucontrol
 # applications
 mintstick
 xed
-gnome-screenshot
-redshift
-onboard
-sticky
 xviewer
 xreader
 gnome-disk-utility
 gnome-calculator
 simple-scan
-pix
 transmission-gtk
 gnome-calendar
-libreoffice-fresh
 rhythmbox
 smplayer
-baobab
 gufw
-firefox
+# internet
 opera
 thunderbird
 keepassxc
