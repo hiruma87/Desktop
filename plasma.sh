@@ -45,7 +45,7 @@ xorg-server
 xorg-xinit
 egl-wayland
 sddm
-plasma
+plasma-meta
 plasma-workspace
 print-manager
 system-config-printer
