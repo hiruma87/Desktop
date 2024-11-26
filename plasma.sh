@@ -48,7 +48,7 @@ xorg-xwininfo
 egl-wayland
 sddm
 plasma
-plasma-wayland-session
+plasma-workspace
 print-manager
 system-config-printer
 konsole
