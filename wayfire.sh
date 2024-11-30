@@ -52,13 +52,14 @@ list=(
 xorg-server
 xorg-xinit
 egl-wayland
+xorg-xwayland
 # DE and WM
-cairo-git
+cairo
 freetype2
 glm
 libdrm
 libevdev
-libGL
+libgl
 libinput
 libjpeg
 libpng
@@ -66,12 +67,12 @@ libxkbcommon
 libxml2
 pixman
 pkg-config
-Wayland
 wayland-protocols
 wf-config
 wlroots
-wayfire-git
+wayfire
 wf-shell
+wlr-randr
 #utilities
 cups
 cups-pdf
@@ -87,7 +88,7 @@ inotify-tools
 bluez
 bluez-utils
 bluez-libs
-blueman
+bluedevil
 #audio
 pipewire
 wireplumber
@@ -138,7 +139,7 @@ sleep 3
 # copy wayfire defaults config
 mkdir $HOME/.config
 sleep 1
-curl https://raw.githubusercontnt.com/hiruma87/Desktop/main/wayfire.ini -o $HOME/.config/wayfire.ini
+curl https://raw.githubusercontent.com/hiruma87/Desktop/main/wayfire.ini -o $HOME/.config/wayfire.ini
 # making a swapfile
 sleep 1
 	echo "################################################################"
