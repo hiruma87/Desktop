@@ -40,6 +40,13 @@ echo "Installation of the core software"
 ###############################################################################
 
 list=(
+#audio
+pipewire
+wireplumber
+pipewire-alsa
+pipewire-pulse
+libpulse
+gst-plugin-pipewire
 #org-sercer and desktop
 xorg-server
 xorg-xinit
@@ -69,17 +76,12 @@ bluez
 bluez-utils
 bluez-libs
 bluedevil
-#audio
-pipewire
-wireplumber
-pipewire-alsa
-pipewire-pulse
-libpulse
-gst-plugin-pipewire
 #apps
+firefox
 opera
 thunderbird
 keepassxc
+smplayer
 # fonts
 noto-fonts
 noto-fonts-cjk
@@ -111,8 +113,6 @@ sleep 1
 sudo systemctl mask systemd-rfkill.socket
 sleep 1
 sudo systemctl mask systemd-rfkill.service
-sleep 1
-sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
 sleep 3
