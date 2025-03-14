@@ -71,6 +71,8 @@ grub-btrfs
 btrfs-assistant
 wireless_tools
 inotify-tools
+#gvfs-ntfs
+gvfs-mtp
 #bluetooth
 bluez
 bluez-utils
@@ -97,6 +99,18 @@ for name in "${list[@]}" ; do
 	sleep 1
 	func_install $name
 done
+
+tput setaf 3
+echo "###############################################################################"
+echo "##################  Installing Flatpak apps"
+echo "###############################################################################"
+echo
+tput sgr0
+
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub net.davidotek.pupgui2
+flatpak install flathub org.kde.kalk
+flatpak install flathub com.felipekinoshita.Kana
 
 ##############################################################################
 
