@@ -45,7 +45,22 @@ egl-wayland
 xorg-xinit
 # DE and WM
 cosmic
- #utilities
+cosmic-comp
+cosmic-applets
+cosmic-app-library
+cosmic-bg
+cosmic-icon-theme
+cosmic-launcher
+cosmic-notifications
+cosmic-osd
+cosmic-panel
+cosmic-settings
+cosmic-text-editor
+cosmic-files
+cosmic-terminal
+cosmic-player
+cosmic-wallpapers
+#utilities
 cups
 cups-pdf
 gutenprint #canon driver
@@ -90,8 +105,6 @@ sudo systemctl enable cups
 sleep 1
 sudo systemctl enable bluetooth
 sleep 1
-sudo systemctl enable cosmic-greeter.service
-sleep 1
 sudo systemctl enable reflector.service
 sleep 1
 sudo systemctl enable reflector.timer
@@ -99,8 +112,6 @@ sleep 1
 sudo systemctl mask systemd-rfkill.socket
 sleep 1
 sudo systemctl mask systemd-rfkill.service
-sleep 1
-sudo systemctl enable upower
 sleep 1
 sudo systemctl enable grub-btrfsd.service
 
