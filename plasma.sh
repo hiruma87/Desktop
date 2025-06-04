@@ -53,6 +53,7 @@ xorg-xinit
 egl-wayland
 # DE and WM
 sddm
+sddm-kcm
 plasma-meta
 plasma-workspace
 print-manager
