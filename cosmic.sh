@@ -60,6 +60,8 @@ cosmic-files
 cosmic-terminal
 cosmic-player
 cosmic-wallpapers
+sddm
+sddm-conf-git
 #utilities
 cups
 cups-pdf
