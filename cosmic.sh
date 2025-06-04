@@ -60,6 +60,7 @@ cosmic-files
 cosmic-terminal
 cosmic-player
 cosmic-wallpapers
+system76-power
 sddm
 sddm-conf-git
 #utilities
