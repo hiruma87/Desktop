@@ -61,8 +61,7 @@ cosmic-terminal
 cosmic-player
 cosmic-wallpapers
 system76-power
-sddm
-sddm-conf-git
+cosmic-greeter
 #utilities
 cups
 cups-pdf
@@ -117,6 +116,8 @@ sleep 1
 sudo systemctl mask systemd-rfkill.service
 sleep 1
 sudo systemctl enable grub-btrfsd.service
+sleep 1
+sudo systemctl enable cosmic-greeter.service
 
 sleep 1
 	echo "################################################################"
