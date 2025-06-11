@@ -54,13 +54,12 @@ Run
 Try to change the performance by changing I/O scheduler
 > Below are some explaination and information regarding scheduler (taken from https://wiki.archlinux.org/title/Improving_performance)
 
-'''bash
-Kernel's I/O schedulers
-
+#### Kernel's I/O schedulers
+```
 While some of the early algorithms have now been decommissioned, the official Linux kernel supports a number of I/O schedulers. The Multi-Queue Block I/O Queuing Mechanism (blk-mq) maps I/O queries to multiple queues, the tasks are distributed across threads and therefore CPU cores. Within this framework the following schedulers are available:
 
     None, where no queuing algorithm is applied.
     mq-deadline, the adaptation of the deadline scheduler (see below) to multi-threading.
     Kyber
     BFQ
-'''
+```
