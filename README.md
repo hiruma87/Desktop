@@ -20,7 +20,7 @@ Run
 ```
 ### KDE Plasma desktop
 ```bash
-curl https://raw.githubusercontent.com/hiruma87/desktop/main/plasma.sh -o plasma.sh
+curl https://raw.githubusercontent.com/hiruma87/Desktop/main/plasma.sh -o plasma.sh
 ```
 > Made it as minimal as possible without compromise utilities that suits me, you can just install plasma-meta or plasma by adding them in the script if you want full experience
 
@@ -39,7 +39,7 @@ sudo pacman -S udiskie
 ```
 Download Udiskie script
 ```bash
-curl https://raw.githubusercontent.com/hiruma87/desktop/main/udiskie.sh -o udiskie.sh
+curl https://raw.githubusercontent.com/hiruma87/Desktop/main/udiskie.sh -o udiskie.sh
 ```
 Set it as executable
 ```bash
@@ -62,4 +62,11 @@ While some of the early algorithms have now been decommissioned, the official Li
     mq-deadline, the adaptation of the deadline scheduler (see below) to multi-threading.
     Kyber
     BFQ
+```
+To change scheduler, curl the .rules file into /etc/udev/rules.d/
+```
+cd /etc/udev/rules.d/
+```
+```
+curl https://raw.githubusercontent.com/hiruma87/Desktop/main/60-ioschedulers.rules -o 60-ioschedulers.rules
 ```
