@@ -67,6 +67,8 @@ inotify-tools
 mintlocale
 cinnamon-translations
 xdg-user-dirs-gtk
+gvfs
+gvfs-mtp
 #bluetooth
 bluez
 bluez-utils
@@ -90,6 +92,7 @@ simple-scan
 smplayer
 gufw
 # internet
+firefox
 opera
 thunderbird
 keepassxc
