@@ -65,6 +65,7 @@ dolphin-plugins
 cups
 cups-pdf
 gutenprint
+simple-scan
 unzip
 unrar
 flatpak
@@ -72,6 +73,8 @@ grub-btrfs
 btrfs-assistant
 wireless_tools
 inotify-tools
+qt5-declarative
+jq
 #gvfs-ntfs
 gvfs-mtp
 #bluetooth
