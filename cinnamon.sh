@@ -143,6 +143,12 @@ sleep 1
 sudo sed -i 's/#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/' /etc/lightdm/lightdm.conf
 sleep 1
 
+# flatpak apps
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub net.davidotek.pupgui2
+flatpak install flathub com.felipekinoshita.Kana
+flatpak install flathub com.belmoussaoui.Decoder
+
 # making a swapfile
 sleep 1
 	echo "################################################################"
