@@ -114,8 +114,6 @@ tput sgr0
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub net.davidotek.pupgui2
 flatpak install flathub org.kde.kalk
-flatpak install flathub com.felipekinoshita.Kana
-flatpak install flathub com.belmoussaoui.Decoder
 
 ##############################################################################
 
