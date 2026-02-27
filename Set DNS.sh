@@ -1,4 +1,4 @@
 # This is only for those who use internet manager
 1. search for connection name
-``bash
-nmcli connection show``
+`'`bash
+nmcli connection show``'
