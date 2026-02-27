@@ -148,9 +148,7 @@ sleep 1
 
 # flatpak apps
 flatpak install flathub org.libreoffice.LibreOffice
-flatpak install flathub net.davidotek.pupgui2
-flatpak install flathub com.felipekinoshita.Kana
-flatpak install flathub com.belmoussaoui.Decoder
+flatpak install flathub com.vysp3r.ProtonPlus
 
 # making a swapfile
 sleep 1
