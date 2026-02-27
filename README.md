@@ -72,3 +72,18 @@ cd /etc/udev/rules.d/
 ```
 curl https://raw.githubusercontent.com/hiruma87/Desktop/main/60-ioschedulers.rules -o 60-ioschedulers.rules
 ```
+
+## Set DNS before installing DE
+1. Search for connection name
+   ```bash
+    nmcli connection show
+   ```
+2. Set the DNS
+   ```
+   sudo nmcli connection modify "Wired connection 1" ipv4.dns "8.8.8.8 8.8.4.4"
+   ```
+3. Reset the network Connection
+   ```
+   sudo nmcli connection down "Wired connection 1"
+   sudo nmcli connection up "Wired connection 1"
+   ```
