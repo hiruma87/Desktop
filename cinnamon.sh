@@ -92,9 +92,7 @@ simple-scan
 smplayer
 gufw
 # internet
-firefox
-opera
-thunderbird
+zen-browser-git
 keepassxc
 # themes
 mint-themes
