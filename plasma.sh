@@ -73,7 +73,6 @@ grub-btrfs
 btrfs-assistant
 wireless_tools
 inotify-tools
-qt5-declarative
 jq
 #gvfs-ntfs
 gvfs-mtp
@@ -83,9 +82,7 @@ bluez-utils
 bluez-libs
 bluedevil
 #apps
-firefox
-opera
-thunderbird
+zen-browser-git
 keepassxc
 smplayer
 steam
