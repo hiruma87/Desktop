@@ -94,8 +94,19 @@ curl https://raw.githubusercontent.com/hiruma87/Desktop/main/60-ioschedulers.rul
 
 ## Beautifying Terminal
 ### Credit: andresgongora/synth-shell
+This section covers the vary basics if you want to get started as fast as possible. See the setup section of this file for more details. Also, before you get started, and to get the best possible experience there are important considerations:
+
+    power-line fonts: install package powerline-fonts on Arch or fonts-powerline on Ubuntu.
+
+    terminal font: configure your terminal emulator to use a nice font. We recommend hack-ttf which you can install for most distros under that name.
+
+    Clone this repository recursively since there are git submodules in it (you only have to copy paste the commands down below as they are).
+
+Once everything is ready, it is as easy as copy-pasting the following commands to run the included setup script.
+
 ```
 git clone --recursive https://github.com/andresgongora/synth-shell.git
 cd synth-shell
 ./setup.sh
 ```
+When prompted, select install (default) and user (default). Afterwards, you might need to open a new terminal. Afterwards, you can customize everything to your liking.
