@@ -91,3 +91,11 @@ curl https://raw.githubusercontent.com/hiruma87/Desktop/main/60-ioschedulers.rul
    sudo nmcli connection down "Wired connection 1"
    sudo nmcli connection up "Wired connection 1"
    ```
+
+## Beautifying Terminal
+### Credit: andresgongora/synth-shell
+```
+git clone --recursive https://github.com/andresgongora/synth-shell.git
+cd synth-shell
+./setup.sh
+```
