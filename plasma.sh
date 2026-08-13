@@ -53,9 +53,7 @@ xorg-xinit
 egl-wayland
 # DE and WM
 sddm
-sddm-kcm
 plasma-meta
-plasma-workspace
 print-manager
 system-config-printer
 konsole
@@ -66,14 +64,11 @@ cups
 cups-pdf
 gutenprint
 simple-scan
-unzip
-unrar
+ark
 flatpak
 grub-btrfs
 btrfs-assistant
 wireless_tools
-inotify-tools
-jq
 #gvfs-ntfs
 gvfs-mtp
 #bluetooth
@@ -82,9 +77,7 @@ bluez-utils
 bluez-libs
 bluedevil
 #apps
-zen-browser-git
 keepassxc
-smplayer
 steam
 # fonts
 noto-fonts
@@ -111,7 +104,6 @@ tput sgr0
 
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub org.kde.kalk
-flatpak install flathub com.vysp3r.ProtonPlus
 ##############################################################################
 
 sudo systemctl enable cups
@@ -128,8 +120,6 @@ sudo systemctl mask systemd-rfkill.socket
 sleep 1
 sudo systemctl mask systemd-rfkill.service
 sleep 1
-sudo systemctl enable grub-btrfsd.service
-sleep 3
 
 # making a swapfile
 sleep 1
@@ -149,8 +139,6 @@ sleep 3
 sudo mount -av
 sleep 3
 free -h
-sleep 1
-sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 sleep 1
 	echo "################################################################"
