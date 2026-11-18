@@ -47,10 +47,12 @@ pipewire-alsa
 pipewire-pulse
 libpulse
 gst-plugin-pipewire
+
 #org-sercer and desktop
 xorg-server
 xorg-xinit
-egl-wayland
+#egl-wayland #needed for NVIDIA card
+
 # DE and WM
 sddm
 plasma-meta
@@ -58,16 +60,19 @@ print-manager
 system-config-printer
 konsole
 dolphin
-dolphin-plugins
+#dolphin-plugins
+
 #utilities
 cups
 cups-pdf
 gutenprint
 simple-scan
 ark
+unzip
+unrar
 flatpak
-grub-btrfs
-btrfs-assistant
+#grub-btrfs
+#btrfs-assistant
 wireless_tools
 #gvfs-ntfs
 gvfs-mtp
@@ -112,33 +117,33 @@ sudo systemctl enable bluetooth
 sleep 1
 sudo systemctl enable sddm.service
 sleep 1
-sudo systemctl enable reflector.service
-sleep 1
-sudo systemctl enable reflector.timer
-sleep 1
+#sudo systemctl enable reflector.service
+#sleep 1
+#sudo systemctl enable reflector.timer
+#sleep 1
 sudo systemctl mask systemd-rfkill.socket
 sleep 1
 sudo systemctl mask systemd-rfkill.service
 sleep 1
 
 # making a swapfile
-sleep 1
-	echo "################################################################"
-	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
-	echo "################################################################"
-sleep 1
+#sleep 1
+#	echo "################################################################"
+#	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
+#	echo "################################################################"
+#sleep 1
 
-sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
-sleep 3
-sudo swapon /.swap/swapfile
-sleep 3
-sudo echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
-sleep 3
-sudo systemctl daemon-reload
-sleep 3
-sudo mount -av
-sleep 3
-free -h
+#sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
+#sleep 3
+#sudo swapon /.swap/swapfile
+#sleep 3
+#sudo echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
+#sleep 3
+#sudo systemctl daemon-reload
+#sleep 3
+#sudo mount -av
+#sleep 3
+#free -h
 
 sleep 1
 	echo "################################################################"
