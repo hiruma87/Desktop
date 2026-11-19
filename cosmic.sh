@@ -66,9 +66,6 @@ unzip
 unrar
 flatpak
 gvfs-mtp
-#grub-btrfs
-#btrfs-assistant
-#gvfs-ntfs
 
 #bluetooth
 bluez
