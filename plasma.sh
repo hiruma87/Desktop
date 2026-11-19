@@ -71,18 +71,18 @@ ark
 unzip
 unrar
 flatpak
-#grub-btrfs
-#btrfs-assistant
-#gvfs-ntfs
 gvfs-mtp
+
 #bluetooth
 bluez
 bluez-utils
 bluez-libs
 bluedevil
+
 #apps
 keepassxc
 steam
+
 # fonts
 noto-fonts
 noto-fonts-cjk
