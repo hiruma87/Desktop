@@ -45,8 +45,7 @@ pipewire
 wireplumber
 pipewire-alsa
 pipewire-pulse
-libpulse
-gst-plugin-pipewire
+pipewire-audio
 
 #org-sercer and desktop
 xorg-server
@@ -60,6 +59,7 @@ print-manager
 system-config-printer
 konsole
 dolphin
+pwvucontrol
 #dolphin-plugins
 
 #utilities
