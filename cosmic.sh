@@ -39,61 +39,47 @@ func_install() {
 }
 
 PKGS=(
-#basic DE
+#org-sercer and desktop
 xorg-server
-#egl-waylan #needed for NVIDIA cardd
 xorg-xinit
-
-# DE and WM
-cosmic
-cosmic-comp
-cosmic-applets
-cosmic-app-library
-cosmic-bg
-cosmic-icon-theme
-cosmic-launcher
-cosmic-notifications
-cosmic-osd
-cosmic-panel
-cosmic-settings
-cosmic-text-editor
-cosmic-files
-cosmic-terminal
-cosmic-player
-cosmic-wallpapers
-system76-power
-cosmic-greeter
-
-#utilities
-cups
-cups-pdf
-gutenprint #canon driver
-unzip
-unrar
-flatpak
-grub-btrfs
-btrfs-assistant
-wireless_tools
-inotify-tools
-
-#bluetooth
-bluez
-bluez-utils
-bluez-libs
+#egl-wayland #needed for NVIDIA card
 
 #audio
 pipewire
 wireplumber
 pipewire-alsa
-pipewire-jack
 pipewire-pulse
-libpulse
-gst-plugin-pipewire
+pipewire-audio
 
-# applications
-#opera
-firefox
+# DE and WM
+cosmic
+xdg-user-dirs
+#dolphin-plugins
+
+#utilities
+cups
+cups-pdf
+gutenprint
+simple-scan
+ark
+unzip
+unrar
+flatpak
+gvfs-mtp
+#grub-btrfs
+#btrfs-assistant
+#gvfs-ntfs
+
+#bluetooth
+bluez
+bluez-utils
+bluez-libs
+bluedevil
+
+#apps
 keepassxc
+steam
+firefox
 
 # fonts
 noto-fonts
