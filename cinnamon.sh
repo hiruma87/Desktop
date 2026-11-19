@@ -39,10 +39,13 @@ func_install() {
 }
 
 PKGS=(
-#basic cinnamon desktop
+
+#org-sercer and desktop
 xorg-server
-egl-wayland
 xorg-xinit
+#egl-wayland #needed for NVIDIA card
+
+#basic cinnamon desktop
 lightdm
 lightdm-slick-greeter
 lightdm-settings
@@ -51,6 +54,7 @@ lightdm-settings
 # lightdm-gtk-greeter-settings
 cinnamon
 gnome-terminal
+
  #utilities
 cups
 cups-pdf
@@ -60,28 +64,25 @@ nemo-fileroller
 unzip
 unrar
 flatpak
-grub-btrfs
-btrfs-assistant
-wireless_tools
-inotify-tools
 mintlocale
 cinnamon-translations
 xdg-user-dirs-gtk
 gvfs
 gvfs-mtp
+
 #bluetooth
 bluez
 bluez-utils
 blueberry
 bluez-libs
+
 #audio
 pipewire
 wireplumber
 pipewire-alsa
-pipewire-jack
 pipewire-pulse
-libpulse
-gst-plugin-pipewire
+pipewire-audio
+
 # applications
 mintstick
 xed
@@ -91,13 +92,16 @@ gnome-disk-utility
 simple-scan
 smplayer
 gufw
+
 # internet
-zen-browser-git
+firefox
 keepassxc
+
 # themes
 mint-themes
 mint-y-icons
 mint-x-icons
+
 # fonts
 noto-fonts
 noto-fonts-cjk
@@ -122,10 +126,10 @@ sudo systemctl enable bluetooth
 sleep 1
 sudo systemctl enable lightdm.service
 sleep 1
-sudo systemctl enable reflector.service
-sleep 1
-sudo systemctl enable reflector.timer
-sleep 1
+#sudo systemctl enable reflector.service
+#sleep 1
+#sudo systemctl enable reflector.timer
+#sleep 1
 sudo systemctl mask systemd-rfkill.socket
 sleep 1
 sudo systemctl mask systemd-rfkill.service
@@ -149,26 +153,26 @@ flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub com.vysp3r.ProtonPlus
 
 # making a swapfile
-sleep 1
-	echo "################################################################"
-	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
-	echo "################################################################"
-sleep 1
-
-sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
-sleep 3
-sudo swapon /.swap/swapfile
-sleep 3
-sudo echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
-sleep 3
-sudo systemctl daemon-reload
-sleep 3
-sudo mount -av
-sleep 3
-free -h
-sleep 1
-sudo grub-mkconfig -o /boot/grub/grub.cfg
-sleep 1
+#sleep 1
+#	echo "################################################################"
+#	tput setaf 3;echo "Creating Swapfile"; tput sgr0;
+#	echo "################################################################"
+#sleep 1
+#
+#sudo btrfs filesystem mkswapfile --size 8g --uuid clear /.swap/swapfile
+#sleep 3
+#sudo swapon /.swap/swapfile
+#sleep 3
+#sudo echo "/.swap/swapfile   none   swap   defaults  0 0" | sudo tee -a /etc/fstab
+#sleep 3
+#sudo systemctl daemon-reload
+#sleep 3
+#sudo mount -av
+#sleep 3
+#free -h
+#sleep 1
+#sudo grub-mkconfig -o /boot/grub/grub.cfg
+#sleep 1
 	echo "################################################################"
 	tput setaf 3;echo "Installing complete"; tput sgr0;
 	echo "################################################################"
