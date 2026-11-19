@@ -102,8 +102,8 @@ sleep 1
 #sleep 1
 #sudo systemctl enable reflector.timer
 #sleep 1
-#sudo systemctl mask systemd-rfkill.socket
-#sleep 1
+sudo systemctl mask systemd-rfkill.socket
+sleep 1
 sudo systemctl mask systemd-rfkill.service
 sleep 1
 #sudo systemctl enable grub-btrfsd.service
