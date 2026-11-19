@@ -73,7 +73,6 @@ unrar
 flatpak
 #grub-btrfs
 #btrfs-assistant
-wireless_tools
 #gvfs-ntfs
 gvfs-mtp
 #bluetooth
