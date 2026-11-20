@@ -46,6 +46,7 @@ wireplumber
 pipewire-alsa
 pipewire-pulse
 pipewire-audio
+gst-plugin-pipewire
 
 #org-sercer and desktop
 xorg-server
