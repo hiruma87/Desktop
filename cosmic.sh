@@ -50,6 +50,7 @@ wireplumber
 pipewire-alsa
 pipewire-pulse
 pipewire-audio
+gst-plugin-pipewire
 
 # DE and WM
 cosmic
