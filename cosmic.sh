@@ -71,7 +71,6 @@ gvfs-mtp
 bluez
 bluez-utils
 bluez-libs
-bluedevil
 
 #apps
 keepassxc
