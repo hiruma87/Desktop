@@ -76,10 +76,12 @@ bluez
 bluez-utils
 bluez-libs
 bluedevil
+haruna
 
 #apps
 keepassxc
 steam
+firefox
 
 # fonts
 noto-fonts
