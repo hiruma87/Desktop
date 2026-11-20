@@ -81,6 +81,7 @@ wireplumber
 pipewire-alsa
 pipewire-pulse
 pipewire-audio
+gst-plugin-pipewire
 
 # applications
 mintstick
