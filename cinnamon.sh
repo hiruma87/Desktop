@@ -67,7 +67,6 @@ flatpak
 mintlocale
 cinnamon-translations
 xdg-user-dirs-gtk
-gvfs
 gvfs-mtp
 
 #bluetooth
