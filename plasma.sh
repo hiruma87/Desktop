@@ -117,6 +117,7 @@ unzip
 unrar
 flatpak
 gvfs-mtp
+firewalld
 
 #bluetooth
 bluez
