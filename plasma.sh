@@ -98,6 +98,7 @@ plasma-systemmonitor
 plasma-workspace
 polkit-kde-agent
 plasma-integration
+iwdtray
 powerdevil
 print-manager
 spectacle
