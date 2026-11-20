@@ -86,7 +86,6 @@ pipewire-audio
 mintstick
 xed
 xviewer
-xreader
 gnome-disk-utility
 simple-scan
 smplayer
