@@ -1,5 +1,23 @@
 #!/usr/bin/env bash
 
+
+#Search for connection name
+nmcli connection show --active
+sleep 1
+#Set the DNS
+sudo nmcli connection modify "Wired connection 1" ipv4.dns "8.8.8.8 8.8.4.4"
+sleep 1
+#Remove autoDns
+sudo nmcli con mod "Wired connection 1" ipv4.ignore-auto-dns yes
+sleep 1
+sudo nmcli con mod "Wired connection 1" ipv6.method "disabled"
+sleep 1
+#Reset the network Connection
+sudo nmcli connection down "Wired connection 1"
+sleep 1
+sudo nmcli connection up "Wired connection 1"
+sleep 1
+
 tput setaf 3
 echo "###############################################################################"
 echo "##################  Installing package Plasma Desktop"
@@ -86,12 +104,14 @@ bluedevil
 #apps
 keepassxc
 steam
+protonplus
 firefox
 smplayer #media player
 #haruna #wayland focus media player
 elisa #music player
 #amarok #full-build music collection manager for sumple player elisa
 kalk
+kate
 libreoffice-fresh
 
 # fonts
