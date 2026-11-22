@@ -57,6 +57,8 @@ xorg-xinit
 sddm
 plasma-meta
 konsole
+dolphin
+dolphin-plugins
 xdg-desktop-portal-kde 
 #dolphin-plugins
 
