@@ -71,6 +71,7 @@ ark
 unzip
 unrar
 flatpak
+isoimagewriter #usb image writer
 gvfs-mtp
 firewalld
 
