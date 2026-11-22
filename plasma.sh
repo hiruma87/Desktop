@@ -49,12 +49,14 @@ pipewire-audio
 gst-plugin-pipewire
 
 #org-sercer and desktop
-xorg-server
-xorg-xinit
+wayland
+xorg-xwayland
+#xorg-server
+#xorg-xinit
 #egl-wayland #needed for NVIDIA card
 
 # DE and WM
-sddm
+#sddm
 plasma-meta
 konsole
 dolphin
@@ -123,7 +125,8 @@ sudo systemctl enable cups
 sleep 1
 sudo systemctl enable bluetooth
 sleep 1
-sudo systemctl enable sddm.service
+#sudo systemctl enable sddm.service
+sudo systemctl enable plasmalogin.service
 sleep 1
 #sudo systemctl enable reflector.service
 #sleep 1
