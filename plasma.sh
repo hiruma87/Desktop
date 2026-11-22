@@ -84,7 +84,10 @@ bluedevil
 keepassxc
 steam
 firefox
-smplayer
+smplayer #media player
+#haruna #wayland focus media player
+elisa #music player
+#amarok #full-build music collection manager for sumple player elisa
 kalk
 libreoffice-fresh
 
