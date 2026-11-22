@@ -66,7 +66,7 @@ xdg-desktop-portal-kde
 cups
 cups-pdf
 gutenprint
-simple-scan
+skanpage
 ark
 unzip
 unrar
