@@ -11,8 +11,8 @@ cd "${HOME}"
 mkdir git
 cd git
 echo "CLONING: YAY"
-git clone "https://aur.archlinux.org/yay.git"
-cd yay
+git clone "https://aur.archlinux.org/yay-bin"
+cd yay-bin
 makepkg -si --noconfirm
 
 
@@ -77,12 +77,14 @@ bluez
 bluez-utils
 bluez-libs
 bluedevil
-haruna
 
 #apps
 keepassxc
 steam
 firefox
+smplayer
+kalk
+libreoffice-fresh
 
 # fonts
 noto-fonts
@@ -100,15 +102,15 @@ for name in "${list[@]}" ; do
 	func_install $name
 done
 
-tput setaf 3
-echo "###############################################################################"
-echo "##################  Installing Flatpak apps"
-echo "###############################################################################"
-echo
-tput sgr0
+#tput setaf 3
+#echo "###############################################################################"
+#echo "##################  Installing Flatpak apps"
+#echo "###############################################################################"
+#echo
+#tput sgr0
 
-flatpak install flathub org.libreoffice.LibreOffice
-flatpak install flathub org.kde.kalk
+#flatpak install flathub org.libreoffice.LibreOffice
+#flatpak install flathub org.kde.kalk
 ##############################################################################
 
 sudo systemctl enable cups
