@@ -97,7 +97,6 @@ kscreenlocker
 ksshaskpass
 ksystemstats
 kup
-kwallet-pam
 kwayland
 kwin
 kwrited
@@ -118,8 +117,6 @@ plasma-keyboard
 plasma-login-manager
 plasma-pa
 plasma-systemmonitor
-plasma-vault
-plasma-welcome
 plasma-workspace
 polkit-kde-agent
 powerdevil
@@ -201,6 +198,7 @@ sleep 1
 #sudo systemctl enable sddm.service
 sudo systemctl enable plasmalogin.service
 sleep 1
+sudo systemctl enable firewalld.service
 #sudo systemctl enable reflector.service
 #sleep 1
 #sudo systemctl enable reflector.timer
