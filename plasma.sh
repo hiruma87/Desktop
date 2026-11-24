@@ -75,7 +75,59 @@ xorg-xwayland
 
 # DE and WM
 #sddm
-plasma-meta
+aurorae
+breeze
+breeze-gtk
+discover
+drkonqi
+flatpak-kcm
+kactivitymanagerd
+kde-cli-tools
+kde-gtk-config
+kdecoration
+kdeplasma-addons
+kglobalacceld
+kinfocenter
+kmenuedit
+knighttime
+kpipewire
+krdp
+kscreen
+kscreenlocker
+ksshaskpass
+ksystemstats
+kup
+kwallet-pam
+kwayland
+kwin
+kwrited
+layer-shell-qt
+libkscreen
+libksysguard
+libplasma
+milou
+ocean-sound-theme
+plasma-activities
+plasma-activities-stats
+plasma-browser-integration
+plasma-desktop
+plasma-disks
+plasma-firewall
+plasma-integration
+plasma-keyboard
+plasma-login-manager
+plasma-pa
+plasma-systemmonitor
+plasma-vault
+plasma-welcome
+plasma-workspace
+polkit-kde-agent
+powerdevil
+print-manager
+spectacle
+systemsettings
+union
+xdg-desktop-portal-kde
 konsole
 dolphin
 dolphin-plugins
@@ -119,6 +171,7 @@ noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 ttf-ubuntu-font-family
+otf-firamono-nerd
 )
 
 for name in "${list[@]}" ; do
@@ -141,9 +194,9 @@ done
 #flatpak install flathub org.kde.kalk
 ##############################################################################
 
-sudo systemctl enable cups
+sudo systemctl enable cups.service
 sleep 1
-sudo systemctl enable bluetooth
+sudo systemctl enable bluetooth.service
 sleep 1
 #sudo systemctl enable sddm.service
 sudo systemctl enable plasmalogin.service
